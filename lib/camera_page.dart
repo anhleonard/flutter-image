@@ -1,6 +1,5 @@
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter_image/preview_page.dart';
 
 class CameraPage extends StatefulWidget {
@@ -14,7 +13,6 @@ class CameraPage extends StatefulWidget {
 
 class _CameraPageState extends State<CameraPage> {
   late CameraController _cameraController;
-  bool _isRearCameraSelected = true;
 
   @override
   void dispose() {
@@ -74,8 +72,9 @@ class _CameraPageState extends State<CameraPage> {
                 child: LayoutBuilder(
                   builder: (context, constraints) {
                     return Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
+                        Text('hello'),
+                        Text('hello'),
                         Container(
                           padding: const EdgeInsets.symmetric(horizontal: 20),
                           width: MediaQuery.of(context).size.width,
